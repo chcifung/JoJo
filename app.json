@@ -1,0 +1,22 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/warn/index",
+    "pages/scanresult/index",
+    "pages/billing/index",
+    "pages/my/index",
+    "pages/wallet/index",
+    "pages/charge/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "comment": {
+    "comment": "微信小程序中的每一个页面的【路径+页面名】都需要写在 app.json 的 pages 中，且 pages 中的第一个页面是小程序的首页。/注释",
+    "comments":"//首页地图//故障上报页//扫描成功页//开始计费页//个人账户页面//钱包页面//充值页//日志页"
+  }
+}

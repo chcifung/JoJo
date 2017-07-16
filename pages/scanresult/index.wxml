@@ -1,0 +1,16 @@
+<!--pages/scanresult/index.wxml-->
+<view class="container">
+  <view class="password-title">
+    <text>借伞密码</text>
+  </view>
+  <view class="password-content">
+    <text>{{password}}</text>
+  </view>
+  <view class="tips">
+    <text>请使用密码借伞，店员确认后，{{time}}s后开始计费</text>
+    <view class="tips-action" bindtap="moveToWarn">
+      伞有问题?
+      <text class="tips-href">回到首页进行报障</text>
+    </view>
+  </view>
+</view>
