@@ -1,0 +1,26 @@
+{
+  "name": "message-js",
+  "version": "0.0.4",
+  "description": "Simple message util",
+  "keywords": [
+    "message",
+    "notification"
+  ],
+  "main": "message.js",
+  "repository": "knaman2609/message.js",
+  "dependencies": {
+    "jquery": "latest"
+  },
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "mocha": "^2.2.5",
+    "jsdom": "3.1.2",
+    "sinon": "1.15.4",
+    "sinon-chai": "2.8.0"
+  },
+  "author": {
+    "name": "Naman Kalkhuria",
+    "email": "naman.kalkh@gmail.com"
+  },
+  "license": "MIT"
+}

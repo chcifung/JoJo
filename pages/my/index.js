@@ -27,11 +27,12 @@ Page({
     wx.getStorage({
       key: 'userInfo',
       //能获取到的则显示用户信息，并保持登录状态，不能就什么也不做
-      success: function(res) {
+      success: (res)=> {
+        console.log(res);
         wx.hideLoading();
-        this.setData({
+          this.setData({
           userInfo:{
-            avatarUrls: res.data.userInfo.avatarUrl,
+            avatarUrl: res.data.userInfo.avatarUrl,
             nickName: res.data.userInfo.nickName
           },
           bType: res.data.bType,

@@ -27,4 +27,5 @@
   globalData: {
     userInfo: null
   }
-})*/
+})
+*/

@@ -1,0 +1,60 @@
+/* Small Reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+/**
+*
+* Message css
+*
+**/
+.message {
+  width: 200px;
+  border-radius: 2px;
+  position: fixed;
+  left: 50%;
+  margin-left: -100px;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  display: none;
+  top: 10px;
+  background: #7FC0C3;
+  font-size: 14px;
+}
+
+.message__header {
+  padding: 5px 10px;
+  border-bottom: 1px solid #EAEAEA;
+}
+
+.message__body {
+  padding: 10px;
+}
+
+.message__close {
+  position: absolute;
+  top: 0px;
+  right: 3px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #fff;
+}
+
+.message.is-active {
+  display: block;
+}
+
+.message--success {
+  background: #84E684;
+}
+
+.message--error {
+  background: #FB2433;
+}
+

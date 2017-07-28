@@ -32,7 +32,7 @@ Page({
       }
     });
     wx.request({
-      url: 'http://202.101.6.26/WeixinRest/wxtest',
+      url: 'https://16652590.qcloud.la/WeixinRest/wxtest',
       success: (res) =>{
         console.log(res.data);
       }
@@ -104,7 +104,7 @@ Page({
     });
     wx.request({
       //请求服务器，显示附近的便利店有伞情况,用marker标记
-      url: 'https://www.wexin.qq.com',
+      url: 'https://16652590.qcloud.la/WeixinRest/wxtest',
       data:{},
       method:"GET",
       success: (res) =>{
@@ -137,13 +137,13 @@ bindcontroltap:function(e){
             })
             //请求服务器获取密码和车号
             wx.request({
-              url: 'https://password.wang.com',
+              url: 'https://16652590.qcloud.la/WeixinRest/wxtest',
               data:{},
               method:'GET',
               success: (res) =>{
                 //如果请求成功，就隐藏等待框
                 wx.hideLoading();
-                //携带密码和车号跳转到密码页
+                //携带密码和伞编号跳转到密码页
                 wx.redirectTo({
                   url: '../scanresult/index?password=' + res.data.data.password +'&number=' + res.data.data.number,
                   success: (res) =>{
@@ -210,7 +210,7 @@ bindcontroltap:function(e){
     //拖动地图，获取附近雨伞或便利店的位置
     if(e.type =="begin"){
       wx.request({
-        url: 'https:weixin.qq.com',
+        url: 'https://16652590.qcloud.la/WeixinRest/wxtest',
         data: {},
         method: "GET",
         success: (res) =>{
